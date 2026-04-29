@@ -42,5 +42,8 @@ public:
 
     // pure virtual function to get product type
     virtual string getType() const = 0;
+
+    // friend function to compare products by price
+    friend bool comparePrice(const Product &a, const Product &b);
 };
 #endif
