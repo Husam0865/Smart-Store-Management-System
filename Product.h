@@ -2,7 +2,10 @@
 #define PRODUCT_H
 
 #include <iostream>
+#include <fstream>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 class Product
@@ -49,5 +52,9 @@ public:
     // Operators
     bool operator==(const Product &o) const;
     friend ostream &operator<<(ostream &os, const Product &p);
+
+    // File I/O
+    void saveToFile(ofstream &out) const;
+    static vector<Product> loadFromFile(ifstream &in);
 };
 #endif
