@@ -40,9 +40,6 @@ public:
     // Update quantity after purchases
     void purchase(int amount);
 
-    // Method to add products
-    void addQuantity(int qty);
-
     // pure virtual function to get product type
     virtual string getType() const = 0;
 
