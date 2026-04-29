@@ -39,5 +39,8 @@ public:
 
     // Method to add products
     void addQuantity(int qty);
+
+    // pure virtual function to get product type
+    virtual string getProductType() const = 0;
 };
 #endif
