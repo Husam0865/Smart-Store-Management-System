@@ -30,5 +30,8 @@ public:
 
     // Static method to get product count
     static int getProductCount();
+
+    // Virtual method to display product details
+    virtual void display() const;
 };
 #endif
