@@ -43,22 +43,22 @@ public:
     // Method to add products
     void addQuantity(int qty);
 
-    // pure virtual function to get product type
+    // Pure virtual function to get product type
     virtual string getType() const = 0;
 
-    // friend function to compare products by price
+    // Friend function to compare products by price
     friend bool comparePrice(const Product &a, const Product &b);
 
     // Operators
-    Product operator+(int qty) const;
+    Product &operator+(int qty);
     bool operator==(const Product &o) const;
     friend ostream &operator<<(ostream &os, const Product &p);
 
     // File I/O
     void saveToFile(ofstream &out) const;
-    static vector<Product> loadFromFile(ifstream &in);
 };
-//  Templates
+
+// Templates
 
 template <typename T>
 T *findMaxPrice(T *arr[], int size)
@@ -79,5 +79,6 @@ void swapObjects(T &a, T &b)
     a = b;
     b = temp;
 }
+ 
 
 #endif
