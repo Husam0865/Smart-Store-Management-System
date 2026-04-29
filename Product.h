@@ -58,4 +58,26 @@ public:
     void saveToFile(ofstream &out) const;
     static vector<Product> loadFromFile(ifstream &in);
 };
+//  Templates
+
+template <typename T>
+T *findMaxPrice(T *arr[], int size)
+{
+    if (size == 0)
+        return nullptr;
+    T *maxP = arr[0];
+    for (int i = 1; i < size; i++)
+        if (arr[i]->getPrice() > maxP->getPrice())
+            maxP = arr[i];
+    return maxP;
+}
+
+template <typename T>
+void swapObjects(T &a, T &b)
+{
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
 #endif
