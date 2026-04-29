@@ -45,5 +45,9 @@ public:
 
     // friend function to compare products by price
     friend bool comparePrice(const Product &a, const Product &b);
+
+    // Operators
+    bool operator==(const Product &o) const;
+    friend ostream &operator<<(ostream &os, const Product &p);
 };
 #endif
