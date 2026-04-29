@@ -36,5 +36,8 @@ public:
 
     // Update quantity after purchases
     void purchase(int amount);
+
+    // Method to add products
+    void addQuantity(int qty);
 };
 #endif
