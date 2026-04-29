@@ -33,5 +33,8 @@ public:
 
     // Virtual method to display product details
     virtual void display() const;
+
+    // Update quantity after purchases
+    void purchase(int amount);
 };
 #endif
