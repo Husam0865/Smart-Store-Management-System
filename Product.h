@@ -41,6 +41,6 @@ public:
     void addQuantity(int qty);
 
     // pure virtual function to get product type
-    virtual string getProductType() const = 0;
+    virtual string getType() const = 0;
 };
 #endif
