@@ -7,11 +7,12 @@ using namespace std;
 
 class Product
 {
-protected:
+private:
     int id;
     string name;
     double price;
     int quantity;
+    static int productCount;
 
 public:
     Product(int id, string name, double price, int quantity);
@@ -26,5 +27,8 @@ public:
     // Setters
     void setPrice(double p);
     void setQuantity(int q);
+
+    // Static method to get product count
+    static int getProductCount();
 };
 #endif
