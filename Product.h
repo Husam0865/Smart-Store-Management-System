@@ -50,6 +50,7 @@ public:
     friend bool comparePrice(const Product &a, const Product &b);
 
     // Operators
+    Product operator+(int qty) const;
     bool operator==(const Product &o) const;
     friend ostream &operator<<(ostream &os, const Product &p);
 
