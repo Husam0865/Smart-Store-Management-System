@@ -40,9 +40,6 @@ public:
     // Update quantity after purchases
     void purchase(int amount);
 
-    // Method to add products
-    void addQuantity(int qty);
-
     // pure virtual function to get product type
     virtual string getType() const = 0;
 
@@ -58,6 +55,7 @@ public:
     void saveToFile(ofstream &out) const;
     static vector<Product> loadFromFile(ifstream &in);
 };
+<<<<<<< HEAD
 //  Templates
 
 template <typename T>
@@ -81,3 +79,6 @@ void swapObjects(T &a, T &b)
 }
 
 #endif
+=======
+#endif
+>>>>>>> b1b867f72c877041599ffa5fcfe963a65ad33a49
